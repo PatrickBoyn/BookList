@@ -26,7 +26,9 @@ UI.prototype.addBookToList = function (book) {
 
 UI.prototype.showAlert = function (message, className) {
     const div = document.createElement('div');
+
     div.className = `alert ${className}`
+
     div.appendChild(document.createTextNode(message));
 
     const container = document.querySelector('.container');
@@ -34,35 +36,35 @@ UI.prototype.showAlert = function (message, className) {
 
     container.insertBefore(div, form);
 
-    setTimeout(function() {
+    setTimeout(function () {
         document.querySelector('.alert').remove();
     }, 3000);
-// Clear feilds prototype
-UI.prototype.clearFeilds = function () {
-    document.getElementById('title').value = '';
-    document.getElementById('author').value = '';
-    document.getElementById('ISBN').value = '';
-}
-
-// Listeners
-document.getElementById('book-form').addEventListener('submit', function (e) {
-    const title = document.getElementById('title').value,
-        author = document.getElementById('author').value,
-        isbn = document.getElementById('ISBN').value;
-    
-    // Instantiate a new book
-    const book = new Book(title, author, isbn);
-
-    const ui = new UI();
-
-    if (title === '' || author === '' || isbn === '') {
-        ui.showAlert('Please fill in all feilds', 'error');
-    } else {
-
-        ui.addBookToList(book);
-        ui.showAlert('Success! Book added!', 'success');
-        ui.clearFeilds();
+    // Clear feilds prototype
+    UI.prototype.clearFeilds = function () {
+        document.getElementById('title').value = '';
+        document.getElementById('author').value = '';
+        document.getElementById('ISBN').value = '';
     }
+}
+// Listeners
+ document.getElementById('book-form').addEventListener('submit', function (e) {
+    const title = document.getElementById('title').value,
+         author = document.getElementById('author').value,
+         isbn = document.getElementById('ISBN').value;
+    
+        // Instantiate a new book
+        const book = new Book(title, author, isbn);
 
-    e.preventDefault();
-})}
+        const ui = new UI();
+
+        if (title === '' || author === '' || isbn === '') {
+            ui.showAlert('Please fill in all feilds', 'error');
+        } else {
+
+            ui.addBookToList(book);
+            ui.showAlert('Success! Book added!', 'success');
+            ui.clearFeilds();
+        }
+
+        e.preventDefault();
+});
