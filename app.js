@@ -26,7 +26,9 @@ UI.prototype.addBookToList = function (book) {
 
 // Clear feilds prototype
 UI.prototype.clearFeilds = function () {
-    
+    document.getElementById('title').value = '';
+    document.getElementById('author').value = '';
+    document.getElementById('ISBN').value = '';
 }
 
 // Listeners
