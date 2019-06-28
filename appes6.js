@@ -37,7 +37,9 @@ class UI {
     }
 
     deleteBook(target) {
-        
+        if (target.className === 'delete') {
+            target.parentElement.parentElement.remove();
+        }
     }
 
     clearFields() {
