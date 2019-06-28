@@ -8,3 +8,9 @@ function Book(title, author, isbn) {
 
 // UI constructor
 function UI() { }
+
+
+// Listeners
+document.getElementById('book-form').addEventListener('submit', function (e) {
+    
+});
