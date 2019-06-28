@@ -10,6 +10,13 @@ class UI {
     addBookToList(book) {
         const list = document.getElementById('book-list');
         const row = document.createElement('tr');
+
+        row.innerHTML = `
+        <td>${book.title}</td>
+        <td>${book.author}</td>
+        <td>${book.isbn}</td>
+        <td><a h </td>
+        `
     }
 
     showAlert(message, className) {
