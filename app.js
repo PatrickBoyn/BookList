@@ -25,9 +25,9 @@ UI.prototype.addBookToList = function (book) {
 }
 
 UI.prototype.showAlert = function (message, className) {
+    const div = document.createElement('div');
+    div.className = `alert ${className}`
     
-}
-
 // Clear feilds prototype
 UI.prototype.clearFeilds = function () {
     document.getElementById('title').value = '';
