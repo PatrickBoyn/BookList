@@ -9,8 +9,8 @@ function Book(title, author, isbn) {
 // UI constructor
 function UI() { }
 
-UI.prototype.addBookToList = function () {
-    
+UI.prototype.addBookToList = function (book) {
+    console.log(book);
 }
 
 // Listeners
@@ -21,7 +21,6 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
     
     // Instantiate a new book
     const book = new Book(title, author, isbn);
-    console.log(book);
 
     const ui = new UI();
 
