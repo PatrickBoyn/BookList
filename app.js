@@ -80,6 +80,7 @@ UI.prototype.clearFeilds = function () {
  });
 // Delete a book
 document.getElementById('book-list').addEventListener('click', function (e) {
+    const ui = new UI();
     
     e.preventDefault();
 });
