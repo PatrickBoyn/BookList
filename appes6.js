@@ -25,6 +25,9 @@ class UI {
         div.className = `alert ${className}`
 
         div.appendChild(document.createTextNode(message));
+
+        const container = document.querySelector('.container');
+        const form = document.querySelector('#book-form');
     }
 
     deleteBook(target) {
