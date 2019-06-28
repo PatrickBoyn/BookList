@@ -19,6 +19,9 @@ body{
 #book-form{
     text-align: center;
 }
+input{
+    margin: 3px 0;
+}
 h1{
     text-align: center;
 }
