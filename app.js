@@ -37,7 +37,6 @@ UI.prototype.showAlert = function (message, className) {
     setTimeout(function() {
         document.querySelector('.alert').remove();
     }, 3000);
-    
 // Clear feilds prototype
 UI.prototype.clearFeilds = function () {
     document.getElementById('title').value = '';
@@ -57,15 +56,13 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
     const ui = new UI();
 
     if (title === '' || author === '' || isbn === '') {
-        alert('Failed to create book.');
+        ui.showAlert('Please fill in all feilds', 'error');
     } else {
 
-        UI.showAlert('Please fill in all feilds', 'error');
-
         ui.addBookToList(book);
-
+        ui.showAlert('Success! Book added!', 'success');
         ui.clearFeilds();
     }
 
     e.preventDefault();
-});
+})}
