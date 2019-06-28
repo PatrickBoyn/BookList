@@ -50,7 +50,21 @@ class UI {
 }
 
 class LocalStorage{
-    
+   static getBooks() {
+        
+    }
+
+   static displayBooks() {
+        
+    }
+
+   static addBooks() {
+        
+    }
+
+    static removeBooks() {
+        
+    }
 }
 
 // Event listeners
