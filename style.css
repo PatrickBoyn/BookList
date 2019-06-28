@@ -51,8 +51,12 @@ table{
 thead{
     font-size: 1.6rem;
 }
+th{
+    padding-left: 1rem;
+}
 td{
     font-size: 1.4rem;
+    padding-left: 1rem; 
 }
 a:link,
 a:visited{
