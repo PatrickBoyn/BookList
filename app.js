@@ -70,6 +70,7 @@ UI.prototype.showAlert = function (message, className) {
         e.preventDefault();
  });
 // Delete a book
-document.getElementById('book-list').addEventListener('click', function () {
+document.getElementById('book-list').addEventListener('click', function (e) {
     
+    e.preventDefault();
 });
