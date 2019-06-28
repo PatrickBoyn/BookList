@@ -10,7 +10,10 @@ function Book(title, author, isbn) {
 function UI() { }
 
 UI.prototype.addBookToList = function (book) {
-    console.log(book);
+    const list = document.getElementById('book-list');
+    const row = document.createElement('tr');
+    
+    console.log(row);
 }
 
 // Listeners
