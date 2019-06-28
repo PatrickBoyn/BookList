@@ -53,7 +53,9 @@ class LocalStorage{
    static getBooks() {
        let books;
        if (localStorage.getItem('books') === null) {
-           let books = [];
+             books = [];
+       } else {
+           books = localStorage.getItem('books');
        }
     }
 
