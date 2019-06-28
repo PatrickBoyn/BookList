@@ -45,6 +45,9 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
     if (title === '' || author === '' || isbn === '') {
         alert('Failed to create book.');
     } else {
+
+        UI.showAlert('Please fill in all feilds', 'error');
+
         ui.addBookToList(book);
 
         ui.clearFeilds();
