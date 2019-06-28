@@ -66,7 +66,9 @@ class LocalStorage{
     }
 
    static addBook(book) {
-        
+       const books = LocalStorage.getBooks();
+
+       books.push(book);
     }
 
     static removeBooks() {
