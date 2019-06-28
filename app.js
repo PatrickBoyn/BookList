@@ -9,6 +9,9 @@ function Book(title, author, isbn) {
 // UI constructor
 function UI() { }
 
+UI.prototype.addBookToList = function () {
+    
+}
 
 // Listeners
 document.getElementById('book-form').addEventListener('submit', function (e) {
