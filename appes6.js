@@ -69,6 +69,8 @@ class LocalStorage{
        const books = LocalStorage.getBooks();
 
        books.push(book);
+
+       localStorage.setItem('books', JSON.stringify(books));
     }
 
     static removeBooks() {
