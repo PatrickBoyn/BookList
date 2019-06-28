@@ -42,9 +42,13 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
 
     const ui = new UI();
 
-    ui.addBookToList(book);
+    if (title === '' || author === '' || isbn === '') {
+        alert('Failed to create book.');
+    } else {
+        ui.addBookToList(book);
 
-    ui.clearFeilds();
+        ui.clearFeilds();
+    }
 
     e.preventDefault();
 });
