@@ -39,6 +39,12 @@ UI.prototype.showAlert = function (message, className) {
     setTimeout(function () {
         document.querySelector('.alert').remove();
     }, 3000);
+
+    UI.prototype.deleteBook(target){
+
+    }
+
+
     // Clear feilds prototype
     UI.prototype.clearFeilds = function () {
         document.getElementById('title').value = '';
