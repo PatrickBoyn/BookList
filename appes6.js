@@ -7,15 +7,15 @@ class Book {
 }
 
 class UI {
-    addBookToList() {
+    addBookToList(book) {
         
     }
 
-    showAlert() {
+    showAlert(message, className) {
         
     }
 
-    deleteBook() {
+    deleteBook(target) {
         
     }
 
