@@ -30,7 +30,10 @@ class UI {
         const form = document.querySelector('#book-form');
 
         container.insertBefore(div, form);
-        
+
+        setTimeout(function () {
+            document.querySelector('.alert').remove();
+        }, 3000);
     }
 
     deleteBook(target) {
