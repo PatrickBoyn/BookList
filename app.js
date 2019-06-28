@@ -20,5 +20,9 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
     const book = new Book(title, author, isbn);
     console.log(book);
 
+    const ui = new UI();
+
+    ui.addBookToList(book);
+
     e.preventDefault();
 });
