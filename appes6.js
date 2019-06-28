@@ -82,9 +82,11 @@ class LocalStorage{
     static removeBooks(isbn) {
         const books = LocalStorage.getBooks();
         
-        books.forEach(function (book) {
-            
-        })
+        books.forEach(function (book, index) {
+            if (book.isbn ===  isbn) {
+                books.splice(index, 1);
+            }
+        });
     }
 }
 
