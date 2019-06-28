@@ -84,6 +84,8 @@ class LocalStorage{
     }
 }
 
+document. addEventListener('DOMContentLoaded', LocalStorage.displayBooks);
+
 // Event listeners
 document.getElementById('book-form').addEventListener('submit', function (e) {
     const title = document.getElementById('title').value,
