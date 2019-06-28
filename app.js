@@ -31,6 +31,13 @@ UI.prototype.showAlert = function (message, className) {
 
     const container = document.querySelector('.container');
     const form = document.querySelector('#book-form');
+
+    container.insertBefore(div, form);
+
+    setTimeout(function() {
+        document.querySelector('.alert').remove();
+    }, 3000);
+    
 // Clear feilds prototype
 UI.prototype.clearFeilds = function () {
     document.getElementById('title').value = '';
