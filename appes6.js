@@ -80,7 +80,11 @@ class LocalStorage{
     }
 
     static removeBooks(isbn) {
-        console.log(isbn);
+        const books = LocalStorage.getBooks();
+        
+        books.forEach(function (book) {
+            
+        })
     }
 }
 
