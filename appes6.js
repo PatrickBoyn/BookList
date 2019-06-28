@@ -51,7 +51,10 @@ class UI {
 
 class LocalStorage{
    static getBooks() {
-        
+       let books;
+       if (localStorage.getItem('books') === null) {
+           
+       }
     }
 
    static displayBooks() {
