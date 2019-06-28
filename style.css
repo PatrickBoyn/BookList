@@ -35,6 +35,10 @@ input{
 h1{
     text-align: center;
 }
+#submit{
+    padding: 0 1rem;
+    font-size: 1.6rem;
+}
 table{
     text-align: center;
     margin-left: 2.5rem;
