@@ -64,8 +64,10 @@ class LocalStorage{
    static displayBooks() {
        const books = LocalStorage.getBooks();
 
-       books.forEach(function () {
-           
+       books.forEach(function (book) {
+           const ui = new UI();
+
+           ui.addBookToList(book);
        });
     }
 
