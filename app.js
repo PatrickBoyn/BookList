@@ -39,19 +39,22 @@ UI.prototype.showAlert = function (message, className) {
     setTimeout(function () {
         document.querySelector('.alert').remove();
     }, 3000);
+}
 
-    UI.prototype.deleteBook(target){
-
-    }
-
-
-    // Clear feilds prototype
-    UI.prototype.clearFeilds = function () {
-        document.getElementById('title').value = '';
-        document.getElementById('author').value = '';
-        document.getElementById('ISBN').value = '';
+UI.prototype.deleteBook(target) {
+    if (target.className === 'delete') {
+        target.parentElement.parentElement.remove();
     }
 }
+
+
+// Clear feilds prototype
+UI.prototype.clearFeilds = function () {
+    document.getElementById('title').value = '';
+    document.getElementById('author').value = '';
+    document.getElementById('ISBN').value = '';
+}
+
 // Listeners
 // Adds the book
  document.getElementById('book-form').addEventListener('submit', function (e) {
