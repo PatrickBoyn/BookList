@@ -13,4 +13,6 @@ body{
     box-sizing: border-box;
     padding: 1.5rem;
     letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
 }
