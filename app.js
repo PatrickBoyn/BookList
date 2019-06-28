@@ -24,6 +24,10 @@ UI.prototype.addBookToList = function (book) {
     list.appendChild(row);
 }
 
+UI.prototype.showAlert = function (message, className) {
+    
+}
+
 // Clear feilds prototype
 UI.prototype.clearFeilds = function () {
     document.getElementById('title').value = '';
