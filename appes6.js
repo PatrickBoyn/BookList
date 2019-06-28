@@ -58,7 +58,7 @@ class LocalStorage{
         
     }
 
-   static addBooks() {
+   static addBook(book) {
         
     }
 
@@ -83,6 +83,9 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
     } else {
 
         ui.addBookToList(book);
+        // Adds the book to storage.
+        LocalStorage.addBook(book);
+
         ui.showAlert('Success! Book added!', 'success');
         ui.clearFields();
     }
