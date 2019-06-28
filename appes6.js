@@ -23,6 +23,8 @@ class UI {
     showAlert(message, className) {
         const div = document.createElement('div');
         div.className = `alert ${className}`
+
+        div.appendChild(document.createTextNode(message));
     }
 
     deleteBook(target) {
