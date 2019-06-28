@@ -17,6 +17,7 @@ class UI {
         <td>${book.isbn}</td>
         <td><a href="#" class="delete">X</a></td>
         `
+        list.appendChild(row);
     }
 
     showAlert(message, className) {
