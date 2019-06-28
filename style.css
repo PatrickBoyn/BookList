@@ -16,3 +16,9 @@ body{
     display: flex;
     justify-content: center;
 }
+#book-form{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
