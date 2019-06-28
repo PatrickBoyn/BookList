@@ -24,6 +24,11 @@ UI.prototype.addBookToList = function (book) {
     list.appendChild(row);
 }
 
+// Clear feilds prototype
+UI.prototype.clearFeilds = function () {
+    
+}
+
 // Listeners
 document.getElementById('book-form').addEventListener('submit', function (e) {
     const title = document.getElementById('title').value,
@@ -36,6 +41,8 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
     const ui = new UI();
 
     ui.addBookToList(book);
+
+    ui.clearFeilds();
 
     e.preventDefault();
 });
