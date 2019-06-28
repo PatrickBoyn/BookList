@@ -47,6 +47,7 @@ UI.prototype.showAlert = function (message, className) {
     }
 }
 // Listeners
+// Adds the book
  document.getElementById('book-form').addEventListener('submit', function (e) {
     const title = document.getElementById('title').value,
          author = document.getElementById('author').value,
@@ -67,4 +68,8 @@ UI.prototype.showAlert = function (message, className) {
         }
 
         e.preventDefault();
+ });
+// Delete a book
+document.getElementById('book-list').addEventListener('click', function () {
+    
 });
