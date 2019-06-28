@@ -82,5 +82,6 @@ UI.prototype.clearFeilds = function () {
 document.getElementById('book-list').addEventListener('click', function (e) {
     const ui = new UI();
     
+    ui.deleteBook(e.target);
     e.preventDefault();
 });
