@@ -49,6 +49,10 @@ class UI {
     }
 }
 
+class LocalStorage{
+    
+}
+
 // Event listeners
 document.getElementById('book-form').addEventListener('submit', function (e) {
     const title = document.getElementById('title').value,
