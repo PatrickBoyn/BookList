@@ -8,7 +8,8 @@ class Book {
 
 class UI {
     addBookToList(book) {
-        
+        const list = document.getElementById('book-list');
+        const row = document.createElement('tr');
     }
 
     showAlert(message, className) {
