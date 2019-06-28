@@ -25,3 +25,14 @@ input{
 h1{
     text-align: center;
 }
+thead{
+    font-size: 1.6rem;
+    border-bottom: 2px solid #000;
+}
+td{
+    font-size: 1.4rem;
+}
+a:link,
+a:visited{
+    color: default;
+}
